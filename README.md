@@ -29,4 +29,7 @@ This repository also includes the OpenDyslexic-Regular.woff font for ease - link
 - By default the dyslexia font only targets \<p\> elements, but you can easily expand this to everything on your page by targetting \<body\>
 - The toolbar buttons do not display a "currently active" effect because they are just basic placeholders to make sure things work. It is recommended to switch them over to buttons that match your design.
 
+# Future Plans:
+When I find the time I would like to turn this project into a deployable chrome extension that can find any relavent elements in a typical webpage and change their display properties to match the end user. 
+
 \- NotNyelaK
