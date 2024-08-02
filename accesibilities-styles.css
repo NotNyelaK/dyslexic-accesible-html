@@ -1,0 +1,140 @@
+/*.show uses !important for instances where the parent may overwrite its hidden property */
+.show {display: block !important;}
+
+/*This is the default container style I created for my own webpage as a placeholder to make sure it worked*/
+.toolbar-content {
+    display: none;
+    position: absolute;
+    top:45px;
+    right: 0;
+    background-color: azure;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+    z-index: 101;
+
+    /*Should match the toolbar width, whatever final value is*/
+    width: 100px;
+}
+
+/* This is the default style of the buttons*/
+.toolbar-button {
+    padding: 10px;
+}
+
+/* This button will display the toolbar and its content*/
+.gear-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    z-index: 100;
+}
+
+/* Below are example styles for a literature format */
+.main-container-example {
+    display: grid;
+    position: relative;
+    justify-items: center;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.read-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    
+    width: 45%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    padding: 48px;
+
+    background-color: rgb(255, 255, 255);
+}
+
+p.first {
+    text-indent: 0em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    text-indent: 3em; 
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+
+/********************************************************
+                    ACCESIBILITIES START
+*********************************************************/
+
+.dark-mode {
+    background-color: rgb(44, 44, 44);
+    color: rgb(190, 190, 190);
+}
+
+/* OpenDyslexic is an open source dyslexic friendly font */
+.dyslex {
+    font-family: OpenDyslexic;
+}
+
+/* comic sans is often reported to help readers with dyselxia - do not discount it for accesibility reasons! */
+.comic-sans {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/* moar-space increases the spacing between paragraphs. Increase spacing by increasing padding-bottom */
+.moar-space {
+    p {
+        padding-bottom: 2em;
+        text-indent: 0;
+    }
+}
+
+/* line-spacing increases the spacing between lines. p.first is used for standard literature format with no line indent */
+.line-spacing {
+    p {
+        line-height: 2.6;
+        text-indent: 6em; 
+    }
+
+    p.first {
+        text-indent: 0em;
+    }
+}
+
+/* makes the text size bigger than default */
+.bigger-text {
+    p {
+      font-size: 26pt;  
+    }
+}
+
+/* from what I can gather this is the default on a webpage */
+.normal-text {
+    p {
+        font-size: 18pt;
+    }
+}
+
+/* smaller text is here for a few reasons, such as mobile users or people who are always zoomed in */
+.smaller-text {
+    p {
+        font-size: 8pt;
+    }
+}
+
+/* widescreen is used when you don't have side content on your page framing your paragraphs. You can interchange 'p' with your text container */
+.wide-screen {
+    .read-area {
+        width: 90%;
+    }
+}
+
+@font-face {
+    font-family: OpenDyslexic;
+    src: url(OpenDyslexic-Regular.woff);
+}
