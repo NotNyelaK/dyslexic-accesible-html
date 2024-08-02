@@ -1,9 +1,11 @@
-# dyslexic-accesible-html
+# dyslexic-accesible-<p>s
 For Developers: Add this code to your website projects to make them more readable for users with dyslexia or poor vision.
 
 ![demo](https://github.com/user-attachments/assets/d479a7cd-6a6b-43c3-8e9b-655cb88254c0)
 
 This code consists of two simple core files: accesibilities-styles.css and reading-accessibilities.js. All relevant functions are stored in the js file, while all the default style settings are stored in the css file. 
+
+This repository also includes the OpenDyslexic-Regular.woff font for ease - link to their page <3: https://opendyslexic.org/
 
 # Web developers should be aware of some basic settings:
 
