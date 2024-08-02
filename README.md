@@ -1,7 +1,7 @@
 # dyslexic-accesible-html
 For Developers: Add this code to your website projects to make them more readable for users with dyslexia or poor vision.
 
-![]https://github.com/NotNyelaK/dyslexic-accesible-html/blob/main/demo.gif
+![https://github.com/NotNyelaK/dyslexic-accesible-html/blob/main/demo.gif]
 
 This code consists of two simple core files: accesibilities-styles.css and reading-accessibilities.js. All relevant functions are stored in the js file, while all the default style settings are stored in the css file. 
 
